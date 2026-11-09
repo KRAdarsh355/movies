@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Movie</title>
+	</head>
+	<body>
+		<div th:text="${name}"></div>
+		<p th:text="${firstline}"></p>
+		<div th:if="${logg}">
+			<p> It is based on the 1996 novel Fight Club by Chuck Palahniuk.
+				 Norton plays the unnamed narrator, who is discontented with his white-collar job. 
+				 He forms a "fight club" with a soap salesman, Tyler Durden (Pitt) and becomes 
+				 embroiled with an impoverished but beguiling woman, Marla Singer (Bonham Carter).</p>
+		</div>
+		<div th:if="${!logg}">
+			<h1>Please log in to read the full movie description.</h1>
+		</div>
+			
+		
+	</body>
+</html>
